@@ -1,0 +1,36 @@
+﻿<!DOCTYPE html>
+<html>
+  <head>
+    <title>闸机学员卡打卡逻辑优化</title>
+    <meta http-equiv="X-UA-Compatible" content="IE=edge"/>
+    <meta http-equiv="content-type" content="text/html; charset=utf-8"/>
+    <meta name="apple-mobile-web-app-capable" content="yes"/>
+    <link href="resources/css/jquery-ui-themes.css" type="text/css" rel="stylesheet"/>
+    <link href="resources/css/axure_rp_page.css" type="text/css" rel="stylesheet"/>
+    <link href="data/styles.css" type="text/css" rel="stylesheet"/>
+    <link href="files/闸机学员卡打卡逻辑优化/styles.css" type="text/css" rel="stylesheet"/>
+    <script src="resources/scripts/jquery-1.7.1.min.js"></script>
+    <script src="resources/scripts/jquery-ui-1.8.10.custom.min.js"></script>
+    <script src="resources/scripts/prototypePre.js"></script>
+    <script src="data/document.js"></script>
+    <script src="resources/scripts/prototypePost.js"></script>
+    <script src="files/闸机学员卡打卡逻辑优化/data.js"></script>
+    <script type="text/javascript">
+      $axure.utils.getTransparentGifPath = function() { return 'resources/images/transparent.gif'; };
+      $axure.utils.getOtherPath = function() { return 'resources/Other.html'; };
+      $axure.utils.getReloadPath = function() { return 'resources/reload.html'; };
+    </script>
+  </head>
+  <body>
+    <div id="base" class="">
+
+      <!-- Unnamed (矩形) -->
+      <div id="u0" class="ax_default box_1">
+        <div id="u0_div" class=""></div>
+        <div id="u0_text" class="text ">
+          <p style="font-size:20px;"><span>闸机控制器本地缓存列表增加学员卡</span></p><p style="font-size:13px;"><span>背景：</span></p><p style="font-size:13px;"><span>目前闸机控制器可能配置为支持员工卡、家长卡、学员卡三种类型。黑利伯瑞闸机支持员工卡和学员卡，但目前校区反馈学员卡打卡出现反应缓慢现象；</span></p><p style="font-size:13px;"><span>问题分析：</span></p><p style="font-size:13px;"><span>黑利伯瑞网络比较慢，同时闸机控制器没有将学员卡列表缓存到本地，因此每次打卡都要通过网络对学员权限进行验证；</span></p><p style="font-size:13px;"><span>解决办法：</span></p><p style="font-size:13px;"><span>闸机如果支持学员卡权限，则将学员卡添加到本地权限缓存列表当中，从而提高闸机的反应速度，同时也可以支持学员卡离线打卡；</span></p>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>
