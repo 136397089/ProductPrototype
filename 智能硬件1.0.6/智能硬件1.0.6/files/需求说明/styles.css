@@ -50,7 +50,7 @@
   position:absolute;
   left:0px;
   top:0px;
-  width:568px;
+  width:391px;
   height:214px;
   background:inherit;
   background-color:rgba(255, 255, 255, 1);
@@ -66,7 +66,7 @@
   position:absolute;
   left:95px;
   top:310px;
-  width:568px;
+  width:391px;
   height:214px;
   text-align:left;
 }
@@ -75,8 +75,8 @@
   position:absolute;
   left:2px;
   top:2px;
-  width:564px;
-  word-wrap:break-word;
+  width:387px;
+  white-space:nowrap;
 }
 #u2_div {
   border-width:0px;

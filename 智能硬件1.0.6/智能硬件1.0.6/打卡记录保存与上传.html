@@ -25,47 +25,87 @@
     <div id="base" class="">
 
       <!-- Unnamed (图片) -->
-      <div id="u272" class="ax_default _图片">
-        <img id="u272_img" class="img " src="images/打卡记录保存与上传/u272.png"/>
+      <div id="u282" class="ax_default _图片">
+        <img id="u282_img" class="img " src="images/打卡记录保存与上传/u282.png"/>
       </div>
 
       <!-- Unnamed (矩形) -->
-      <div id="u273" class="ax_default box_1">
-        <div id="u273_div" class=""></div>
-        <div id="u273_text" class="text ">
+      <div id="u283" class="ax_default box_1">
+        <div id="u283_div" class=""></div>
+        <div id="u283_text" class="text ">
           <p><span>流程一：</span></p>
         </div>
       </div>
 
       <!-- Unnamed (图片) -->
-      <div id="u274" class="ax_default _图片">
-        <img id="u274_img" class="img " src="images/打卡记录保存与上传/u274.png"/>
+      <div id="u284" class="ax_default _图片">
+        <img id="u284_img" class="img " src="images/打卡记录保存与上传/u284.png"/>
       </div>
 
       <!-- Unnamed (矩形) -->
-      <div id="u275" class="ax_default box_1">
-        <div id="u275_div" class=""></div>
-        <div id="u275_text" class="text ">
+      <div id="u285" class="ax_default box_1">
+        <img id="u285_img" class="img " src="images/打卡记录保存与上传/u285.png"/>
+        <div id="u285_text" class="text ">
           <p><span>流程二：</span></p>
         </div>
       </div>
 
       <!-- Unnamed (组合) -->
-      <div id="u276" class="ax_default" data-left="26" data-top="68" data-width="631" data-height="96">
+      <div id="u286" class="ax_default" data-left="26" data-top="68" data-width="926" data-height="96">
 
         <!-- Unnamed (矩形) -->
-        <div id="u277" class="ax_default label">
-          <div id="u277_div" class=""></div>
-          <div id="u277_text" class="text ">
+        <div id="u287" class="ax_default label">
+          <div id="u287_div" class=""></div>
+          <div id="u287_text" class="text ">
             <p><span>打卡记录保存上传功能</span></p>
           </div>
         </div>
 
         <!-- Unnamed (矩形) -->
-        <div id="u278" class="ax_default paragraph">
-          <div id="u278_div" class=""></div>
-          <div id="u278_text" class="text ">
-            <p><span>需要升级的硬件：立式考勤机、门禁控制器、闸机控制器</span></p><p><span>由于设备断线后打卡数据无法正常上传到后台，在离线期间的打卡记录将被丢失。因此增加离线打卡记录上传功能，在设备离线期间将打卡记录在本地，在线后将记录上传后台。</span></p>
+        <div id="u288" class="ax_default paragraph">
+          <div id="u288_div" class=""></div>
+          <div id="u288_text" class="text ">
+            <p><span>需要升级的硬件：立式考勤机、门禁控制器、闸机控制器</span></p><p><span>由于设备断线后打卡数据无法正常上传到后台，在离线期间的打卡记录将被丢失。因此增加离线打卡记录上传功能，在设备离线期间将打卡记录在本地，在线后将记录上传后台。（上传以后的通知和消课问题。其他的数据联动。）</span></p>
+          </div>
+        </div>
+      </div>
+
+      <!-- Unnamed (组合) -->
+      <div id="u289" class="ax_default" data-left="18" data-top="786" data-width="926" data-height="72">
+
+        <!-- Unnamed (矩形) -->
+        <div id="u290" class="ax_default label">
+          <div id="u290_div" class=""></div>
+          <div id="u290_text" class="text ">
+            <p><span>打卡断线重联后上传数据内容</span></p>
+          </div>
+        </div>
+
+        <!-- Unnamed (矩形) -->
+        <div id="u291" class="ax_default paragraph">
+          <div id="u291_div" class=""></div>
+          <div id="u291_text" class="text ">
+            <p><span>对于学员卡、家长卡和员工卡的数据补上传，断线重联后需要补充上传在线保存记录的卡号、现场照片（目前只有考勤机）和打卡时间。（原逻辑中，在线情况下只上传卡号和照片）</span></p>
+          </div>
+        </div>
+      </div>
+
+      <!-- Unnamed (组合) -->
+      <div id="u292" class="ax_default" data-left="18" data-top="890" data-width="926" data-height="168">
+
+        <!-- Unnamed (矩形) -->
+        <div id="u293" class="ax_default label">
+          <div id="u293_div" class=""></div>
+          <div id="u293_text" class="text ">
+            <p><span>补充上传数据后的逻辑处理</span></p>
+          </div>
+        </div>
+
+        <!-- Unnamed (矩形) -->
+        <div id="u294" class="ax_default paragraph">
+          <div id="u294_div" class=""></div>
+          <div id="u294_text" class="text ">
+            <p><span>对于家长卡和学员卡后台接收到补充上传的数据需要处理的业务有三个，分别如下：</span></p><p><span>1.到校通知：接收到补充上传的数据后不再发送到校通知；</span></p><p><span>2.签到：如果补充记录所对应的课节已经通过其他方式进行签到，则不再签到。如果对应课节还末签到，则对该课节进行签到。</span></p><p><span>3.打卡记录：按照时间顺序插入到原有的打卡记录列表当中。既打卡记录列表总是按照时间顺序显示给用户。</span></p><p><span>对于员工卡需要处理的业务有一个：</span></p><p><span>1.打卡记录：按照时间顺序插入到原有的打卡记录列表当中。既打卡记录列表总是按照时间顺序显示给用户。</span></p>
           </div>
         </div>
       </div>
