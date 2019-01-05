@@ -55,10 +55,34 @@
 ._文本段落 {
   text-align:left;
 }
+.radio_button {
+  text-align:left;
+}
+.table_cell {
+}
+._流程形状 {
+}
+.box_2 {
+}
+.ellipse {
+}
+.box_3 {
+}
 .label {
   font-size:14px;
   text-align:left;
 }
 .paragraph {
   text-align:left;
+}
+._形状 {
+}
+._垂直线 {
+}
+._水平线 {
+}
+._图片1 {
+  color:#000000;
+}
+.icon {
 }
